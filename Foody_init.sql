@@ -109,8 +109,7 @@ primary key (NoCom, RefProd),
 foreign key (NoCom) references commande (NoCom),
 foreign key (RefProd) references produit (RefProd)
 );
--- step 2 insert les données from csv 
+-- step 2 insert les données from csv par pandas
 
 -- step 3 ajouter foreign key pour table employe
-
 alter table employe add constraint fk_employe foreign key (RendCompteA) references employe(NoEmp);
